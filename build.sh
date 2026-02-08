@@ -1,5 +1,11 @@
 #!/bin/bash
-echo "Starting build..."
-echo "Compiling application (simulation)"
-sleep 1
-echo "Build completed successfully"
+echo "========================"
+echo "TEST STAGE STARTED"
+
+if [ 5 -gt 3 ]; then
+  echo "TEST PASSED"
+  exit 0
+else
+  echo "TEST FAILED"
+  exit 1
+fi
